@@ -36,7 +36,7 @@
         </body>
         </html>
         ";
-    })
+    });
 
     $app->get("/view_rectangle", function() {
         $my_rectangle = new Rectangle($_GET['length'], $_GET['width']);
@@ -47,7 +47,7 @@
           return "<h1>Sorry! This isn't a square. Its area is $area.</h1>";
         }
     });
-    
+
     return $app;
 
 ?>
